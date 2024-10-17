@@ -42,7 +42,7 @@ var searchIdentityProvider = (sku.name == 'free') ? null : {
 
 resource search 'Microsoft.Search/searchServices@2021-04-01-preview' = {
   name: name
-  location: location
+  location: 'francecentral'
   tags: tags
   // The free tier does not support managed identity
   identity: searchIdentityProvider
